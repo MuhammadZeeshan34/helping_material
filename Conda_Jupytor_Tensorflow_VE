@@ -1,1 +1,17 @@
-Conda needs to installed from Installer and not pip if needed to use from comand line . 
+Conda needs to installed from Installer and not pip if needed to use from comand line. 
+Either Install Annaconda or Miniconda. If one is installed, other needs to be uninstalled first which can be done by (rm -r miniconda3)
+
+After installing from Installer it will be needed to add the path to system:
+-> Open 'nano .profile' or 'nano .bashrc' or 'open ~/.bash_profile'
+-> Add the path to miniconda or anaconda i.e "export PATH=/Users/zeeshannawaz/.annaconda/bin/:$PATH"
+
+Now 'conda' will be recognised as command in the cmd
+
+Now create a virtual environment using conda i.e 
+'conda create -n tensorflow python=3.5' (name 'tensorflow' can be changed)
+It may need to close the cmd after it
+'source activate tensorflow'  Activate the VE by 
+'conda install -c conda-forge tensorflow'
+'conda install notebook ipykernel' Install notebook using Conda
+'jupytor notebook' Open notebook and play with tensorflow 
+
