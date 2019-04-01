@@ -13,5 +13,5 @@ It may need to close the cmd after it
 'source activate tensorflow'  Activate the VE by 
 'conda install -c conda-forge tensorflow'
 'conda install notebook ipykernel' Install notebook using Conda
-'jupytor notebook' Open notebook and play with tensorflow 
+'jupyter notebook' Open notebook and play with tensorflow 
 
