@@ -1,0 +1,8 @@
+npm install -g n
+
+npm cache clean -f 
+
+sudo n stable
+
+npm update g
+
