@@ -1,0 +1,26 @@
+Add IOS App to firebase (give some uniuqe name)
+Download the .plist file and copy & add it to the project near the info.plist
+
+Setup Cocoapods:
+  pod init
+  add these lines to the podfile
+   pod 'Firebase'
+   pod 'Firebase/Core'
+   pod 'Firebase/Database'
+   pod 'Firebase/Auth'
+  run 'pod install'
+  
+ Register Firebase with the App
+ Add these lines to the main Appdelegate file
+ import Firebase
+ Firebase.configure()    (Override inside the main function before returning)
+ 
+ 
+ You can check the connection visa 
+
+ let db=Database.databse().reference
+ db.setValue("Welcome to Firebase")
+ 
+ If app does not store value in the Firebase database, you may need to set the permission. 
+ Go to the Firebase console, open database tab and go to rules and make sure both read and write are set true (beware anyone can read and write if set true and not configured properly)
+ 
